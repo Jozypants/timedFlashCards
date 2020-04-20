@@ -14,30 +14,34 @@ _This application teaches you about javascript with timed flash cards and points
 
 ## SPEC Sheet
 
-* Program stores points for the user
+* Program calculates points for the user
   * Input: user scores 5 points
   * Output: user has 5 points
 
-* Keeping score for correct answers
+* Program calculates points for correct answers
   * Input: User answers correctly
   * Output: Add 5 points to their score
 
-* Keeping score for incorrect answers 
+* Program calculates points for incorrect answers 
   * Input: User answer incorrectly
   * Output: Deduct 5 points to their score
-  
-* Questions appear after answering correctly or incorrectly
-  * Input: user answers 'yes' or 'no'
-  * Output: screen refreshes with new flashcard
+
+* Program gives 0 points if user does not answer.
+ * Input: User does not answer
+ * Output: New question
 
 * User has a set amount of time to answer a question
   * Input: 20 seconds to answer
-  * Output: New question appears
+  * Output: Points calculated based on right or wrong answer.
+  
+<!-- * Questions appear after answering correctly or incorrectly
+  * Input: user answers 'yes' or 'no'
+  * Output: screen refreshes with new flashcard -->
 
 
-* Program moves on to next question if user does not answer.
- * Input: User does not answer
- * Output: New question
+
+
+
 
 ## Setup/Installation Requirements
 

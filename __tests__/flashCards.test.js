@@ -1,9 +1,18 @@
-import { FlashCardPoints } from './../src/flashCards.js';
+import { FlashCardPoints } from "./../src/flashCards.js";
 
-describe ('FlashCardPoints', ()=> {
-  let flashCards = new FlashCardPoints();
+describe("FlashCardPoints", () => {
+  jest.useFakeTimers();
+  let flashCards;
 
-  test('should correctly create a class to hold points for the user', () => {
+  beforeEach(function () {
+    flashCards = new FlashCardPoints();
+  });
+
+  afterEach(function () {
+    jest.clearAllTimers();
+  });
+
+  test("should correctly create a class to hold points for the user", () => {
     flashCards.points;
     expect(flashCards.points).toEqual(0);
   });
@@ -13,8 +22,19 @@ describe ('FlashCardPoints', ()=> {
   //   expect(flashCards.answer).toEqual(true);
   // });
 
-  test('should add 5 points to score for answering correctly', () => {
+  test("should add 5 points to score for answering correctly", () => {
     flashCards.countPoints(true);
+    expect(flashCards.points).toEqual(5);
+  });
+
+  // test("should give user a set amount of time to answer a question", () =>{
+  //   flashCards.
+  //   expect()
+  // });
+
+  test("should test for points after 20 seconds", () => {
+    flashCards.switchCards(true);
+    jest.advanceTimersByTime(20001);
     expect(flashCards.points).toEqual(5);
   });
 });
