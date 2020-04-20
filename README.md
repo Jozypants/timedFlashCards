@@ -14,15 +14,7 @@ _This application teaches you about javascript with timed flash cards and points
 
 ## SPEC Sheet
 
-* Questions appear after answering correctly or incorrectly
-  * Input: user answers 'yes' or 'no'
-  * Output: screen refreshes with new flashcard
-
-* User has a set amount of time to answer a question
-  * Input: 20 seconds to answer
-  * Output: New question appears
-
-* Program keeps track of points for the user
+* Program stores points for the user
   * Input: user scores 5 points
   * Output: user has 5 points
 
@@ -33,6 +25,15 @@ _This application teaches you about javascript with timed flash cards and points
 * Keeping score for incorrect answers 
   * Input: User answer incorrectly
   * Output: Deduct 5 points to their score
+  
+* Questions appear after answering correctly or incorrectly
+  * Input: user answers 'yes' or 'no'
+  * Output: screen refreshes with new flashcard
+
+* User has a set amount of time to answer a question
+  * Input: 20 seconds to answer
+  * Output: New question appears
+
 
 * Program moves on to next question if user does not answer.
  * Input: User does not answer
