@@ -8,13 +8,13 @@ describe ('FlashCardPoints', ()=> {
     expect(flashCards.points).toEqual(0);
   });
 
-  test('should add 5 points to score for answering correctly', () => {
-    flashCards.addPoints();
-    expect(flashCards.addPoints()).toEqual(5);
-  });
+  // test('should determine if an "answer" is "true" or "false"', ()=>{
+  //   flashCards.determineTrueOrFalse(true);
+  //   expect(flashCards.answer).toEqual(true);
+  // });
 
-  test('should determine if an "answer" is "true" or "false"', ()=>{
-    flashCards.determineTrueOrFalse("true");
-    expect(flashCards.answer).toEqual("true");
+  test('should add 5 points to score for answering correctly', () => {
+    flashCards.countPoints(true);
+    expect(flashCards.points).toEqual(5);
   });
-})
+});
